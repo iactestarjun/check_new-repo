@@ -21,7 +21,7 @@ resource "aws_internet_gateway" "km_ig" {
   })
 }
 
-# Grant the VPC internet access on its main route table
+# Grant the VPC internet access on its main route table new
 resource "aws_route" "km_route" {
   route_table_id         = aws_vpc.km_vpc.main_route_table_id
   destination_cidr_block = "0.0.0.0/0"
